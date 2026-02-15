@@ -5,22 +5,24 @@ DAL (Document Analysis Layout): Sharan Ravula
 > In this project, in the upload UI, you have to choose the analysis mode, which is basically changing the dpi of an Image, when we use OCR in a project dpi of the image is really important for OCR to detect text.
 I have shared the necessary info on DPI change for the small and Large analysis mode, obviously you can use custom option and customize the dpi of an image however you like! Enjoy this Project of Mine.
 
+---
+
 DAL-Project/
 │
-├── DAL-ProjectOCR.py        > # Main Flask app
-├── last_paths.json          > # Stores info on previously used paths
-├── coordinates.py           > # Script for handling Original Scaling coordinate-related logic
+├── DAL-ProjectOCR.py        # Main Flask app
+├── last_paths.json          # Stores info on previously used paths
+├── coordinates.py           # Script for handling Original Scaling coordinate-related logic
 ├── templates/
-│   ├── upload.html          > # Upload page
-│   ├── results.html         > # Results display
-│   ├── results.js           > # JavaScript for results page
-│   ├── upload.js            > # JavaScript for upload page
-│   ├── upload.css           > # CSS for upload page
-│   └── styles.css           > # CSS file for styling pages
-├── uploads/                 > # Storing the PDF/Image files users upload. (Auto-created)
-├── static/                  > # Saving annotated images and JSON output. (Auto-created)
-├── Test-Cases/              > # Contains multiple test-case files
-└── README.txt               > # Instruction Manual - Please read it
+│   ├── upload.html          # Upload page
+│   ├── results.html         # Results display
+│   ├── results.js           # JavaScript for results page
+│   ├── upload.js            # JavaScript for upload page
+│   ├── upload.css           # CSS for upload page
+│   └── styles.css           # CSS file for styling pages
+├── uploads/                 # Storing the PDF/Image files users upload. (Auto-created)
+├── static/                  # Saving annotated images and JSON output. (Auto-created)
+├── Test-Cases/              # Contains multiple test-case files
+└── README.txt               # Instruction Manual - Please read it
 
 After opening the zip file, 
 
@@ -44,7 +46,9 @@ In the terminal make sure you cd to the project folder i.e. ~/DAL-Project/
 
 	- macOS:
 	
-		`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+		```
+		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  		```
 
    - Windows: On Windows, you can use Chocolatey as a package manager.
 
