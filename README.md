@@ -37,15 +37,13 @@ In the terminal make sure you cd to the project folder i.e. ~/DAL-Project/
 1. Create a Virtual Environment in the path you open the file:
 	
 	- macOS / Linux:
-		```bash
+ 	 	```bash
 		python3 -m venv venv
 		source venv/bin/activate
-
 	- Windows:
-		```
+		```powershell
 		python -m venv venv
 		.\venv\Scripts\activate
-
 2. Install Homebrew (optional but recommended):
 
 	- macOS:
@@ -58,13 +56,11 @@ In the terminal make sure you cd to the project folder i.e. ~/DAL-Project/
 
 	   - Open PowerShell as Administrator.
 	   - Run the following command to install Chocolatey:
-			```
+			```powershell
 			Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-
 	   - Close and reopen your PowerShell, then verify Chocolatey is installed:
 			```
 			choco --version
-	
 4. Install Dependencies: First, make sure pip is updated:
 		
 	- macOS/Linux
@@ -72,15 +68,13 @@ In the terminal make sure you cd to the project folder i.e. ~/DAL-Project/
 		python3 -m pip install --upgrade pip
 		pip --version
 		pip install flask pdfplumber easyocr pyzbar pillow numpy pytesseract
-
    > A new file will be added to the DAL-Project Folder i.e. venv
 
 	- Windows
-		```
+		```powershell
 		python -m pip install --upgrade pip
 		pip --version
 		pip install flask pdfplumber easyocr pyzbar pillow numpy pytesseract
-
   > A new file will be added to the DAL-Project Folder i.e. venv
 
 5. Run the App:
@@ -88,15 +82,13 @@ In the terminal make sure you cd to the project folder i.e. ~/DAL-Project/
 	- macOS
 		```bash
 		python3 DAL-ProjectOCR.py
-
 	- Windows
-		```
+		```powershell
 		python DAL-ProjectOCR.py
 
 6. Usage:
 	```
 	http://127.0.0.1:5000
-
 7. Troubleshooting:
 
 	- For large PDFs, ensure you have enough RAM and CPU cores.
