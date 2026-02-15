@@ -86,9 +86,7 @@ In the terminal make sure you cd to the project folder i.e. ~/DAL-Project/
 	  ```powershell
 	  python DAL-ProjectOCR.py
 
-6. Usage:
-   ```
-	http://127.0.0.1:5000
+6. Usage: ```http://127.0.0.1:5000```
 7. Troubleshooting:
 
 	- For large PDFs, ensure you have enough RAM and CPU cores.
