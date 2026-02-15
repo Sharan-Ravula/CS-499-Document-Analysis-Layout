@@ -1,4 +1,5 @@
-# DAL (Document Analysis Layout): Sharan Ravula
+# DAL (Document Analysis Layout):
+**Developed by: Sharan Ravula**
 
 ---
 
