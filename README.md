@@ -69,7 +69,6 @@ In the terminal make sure you cd to the project folder i.e. ~/DAL-Project/
        
 	     ```
          choco --version
-      
 4. Install Dependencies: First, make sure pip is updated:
 		
 	- macOS/Linux:
@@ -106,7 +105,6 @@ In the terminal make sure you cd to the project folder i.e. ~/DAL-Project/
    
    ```
    http://127.0.0.1:5000
-
 8. Troubleshooting:
 
 	- For large PDFs, ensure you have enough RAM and CPU cores.
