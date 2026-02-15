@@ -37,16 +37,21 @@ In the terminal make sure you cd to the project folder i.e. ~/DAL-Project/
 1. Create a Virtual Environment in the path you open the file:
 	
 	- macOS / Linux:
+
       ```bash
 	  python3 -m venv venv
 	  source venv/bin/activate
+      
 	- Windows:
+
 	  ```powershell
 	  python -m venv venv
 	  .\venv\Scripts\activate
+   
 2. Install Homebrew (optional but recommended):
 
 	- macOS:
+
 	  ```bash
 	  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -56,39 +61,52 @@ In the terminal make sure you cd to the project folder i.e. ~/DAL-Project/
 
 	   - Open PowerShell as Administrator.
 	   - Run the following command to install Chocolatey:
+       
 	     ```powershell
 		 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+      
 	   - Close and reopen your PowerShell, then verify Chocolatey is installed:
+       
 	     ```
          choco --version
+      
 4. Install Dependencies: First, make sure pip is updated:
 		
-	- macOS/Linux
+	- macOS/Linux:
+
 	  ```bash
 	  python3 -m pip install --upgrade pip
 	  pip --version
 	  pip install flask pdfplumber easyocr pyzbar pillow numpy pytesseract
+   
    > A new file will be added to the DAL-Project Folder i.e. venv
 
-	- Windows
+	- Windows:
+
 	  ```powershell
 	  python -m pip install --upgrade pip
 	  pip --version
 	  pip install flask pdfplumber easyocr pyzbar pillow numpy pytesseract
+   
   > A new file will be added to the DAL-Project Folder i.e. venv
 
 5. Run the App:
 
-	- macOS
+	- macOS:
+
 	  ```bash
 	  python3 DAL-ProjectOCR.py
-	- Windows
+   
+	- Windows:
+
 	  ```powershell
 	  python DAL-ProjectOCR.py
 
 6. Usage:
+   
    ```
    http://127.0.0.1:5000
+
 8. Troubleshooting:
 
 	- For large PDFs, ensure you have enough RAM and CPU cores.
@@ -102,13 +120,12 @@ In the terminal make sure you cd to the project folder i.e. ~/DAL-Project/
 9. Additional Nerdy-Stuff:
 
 	- The other modules like json, time, os, re, and multiprocessing are part of Python’s standard library, so you don’t need to install them separately.
-
 	- API Endpoints
 
-| Endpoint | Method		| Description |
+| Endpoint | Method | Description |
 | :--- | :---: | ---: |
 | /	| GET | Upload interface |
 | /upload | POST | Uploads PDF and triggers OCR |
-| /results/<pdf_name>							| GET |			Shows total processed pages |
-| /json_data/<pdf_name>/<int:page>			| GET |			Returns JSON of extracted text |
-| /highlighted_image/<pdf_name>/<int:page>	| GET |			Returns image with bounding boxes |
+| /results/<pdf_name> | GET | Shows total processed pages |
+| /json_data/<pdf_name>/<int:page> | GET | Returns JSON of extracted text |
+| /highlighted_image/<pdf_name>/<int:page> | GET | Returns image with bounding boxes |
