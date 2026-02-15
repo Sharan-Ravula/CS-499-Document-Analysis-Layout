@@ -37,13 +37,13 @@ In the terminal make sure you cd to the project folder i.e. ~/DAL-Project/
 1. Create a Virtual Environment in the path you open the file:
 	
 	- macOS / Linux:
- 	 	```bash
-		python3 -m venv venv
-		source venv/bin/activate
+      ```bash
+	  python3 -m venv venv
+	  source venv/bin/activate
 	- Windows:
-		```powershell
-		python -m venv venv
-		.\venv\Scripts\activate
+	  ```powershell
+	  python -m venv venv
+	  .\venv\Scripts\activate
 2. Install Homebrew (optional but recommended):
 
 	- macOS:
