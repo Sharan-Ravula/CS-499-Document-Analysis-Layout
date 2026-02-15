@@ -37,22 +37,20 @@ In the terminal make sure you cd to the project folder i.e. ~/DAL-Project/
 1. Create a Virtual Environment in the path you open the file:
 	
 	- macOS / Linux:
-		```
-  		python3 -m venv venv
-		source venv/bin/activate
-  		```
+
+		```python3 -m venv venv```
+		```source venv/bin/activate```
+
 	- Windows:
-		```
-		python -m venv venv
-		.\venv\Scripts\activate
-		```
+
+		```python -m venv venv```
+		```.\venv\Scripts\activate```
+
 2. Install Homebrew (optional but recommended):
 
 	- macOS:
 	
-		```
-		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  		```
+		```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```
 
    - Windows: On Windows, you can use Chocolatey as a package manager.
 
@@ -60,9 +58,8 @@ In the terminal make sure you cd to the project folder i.e. ~/DAL-Project/
 
 	   - Open PowerShell as Administrator.
 	   - Run the following command to install Chocolatey:
-		```
-		Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-   		```
+
+		```Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))```
 
 	   - Close and reopen your PowerShell, then verify Chocolatey is installed:
 
@@ -71,19 +68,21 @@ In the terminal make sure you cd to the project folder i.e. ~/DAL-Project/
 4. Install Dependencies: First, make sure pip is updated:
 		
 	- macOS/Linux
-		```
-		python3 -m pip install --upgrade pip
-		pip --version
-		pip install flask pdfplumber easyocr pyzbar pillow numpy pytesseract
-		A new file will be added to the DAL-Project Folder i.e. venv
-		```
+
+		```python3 -m pip install --upgrade pip```
+		```pip --version```
+		```pip install flask pdfplumber easyocr pyzbar pillow numpy pytesseract```
+
+   > A new file will be added to the DAL-Project Folder i.e. venv
+
 	- Windows
 		```
-		python -m pip install --upgrade pip
-		pip --version
-		pip install flask pdfplumber easyocr pyzbar pillow numpy pytesseract
-		A new file will be added to the DAL-Project Folder i.e. venv
-		```
+		```python -m pip install --upgrade pip```
+		```pip --version```
+		```pip install flask pdfplumber easyocr pyzbar pillow numpy pytesseract```
+
+  > A new file will be added to the DAL-Project Folder i.e. venv
+
 5. Run the App:
 
 	- macOS
