@@ -86,8 +86,9 @@ In the terminal make sure you cd to the project folder i.e. ~/DAL-Project/
 	  ```powershell
 	  python DAL-ProjectOCR.py
 
-6. Usage: ```http://127.0.0.1:5000```
-7. Troubleshooting:
+6. Usage:
+   ```http://127.0.0.1:5000```
+8. Troubleshooting:
 
 	- For large PDFs, ensure you have enough RAM and CPU cores.
 	- If EasyOCR fails to load, make sure PyTorch is correctly installed.
@@ -97,7 +98,7 @@ In the terminal make sure you cd to the project folder i.e. ~/DAL-Project/
 	- If you find any red highlights in any html file ignore it, as it is a editor issue and wont effect the main program.
 	- The drag box wont move when you first upload the file, you have to delete the drag box by clicking the "x" icon on the top right corner of the border, and press the button "More Drag-Boxes" only then it works properly, I dont know why this glitch is happening but it is a very small one so I ignored it.
 
-8. Additional Nerdy-Stuff:
+9. Additional Nerdy-Stuff:
 
 	- The other modules like json, time, os, re, and multiprocessing are part of Python’s standard library, so you don’t need to install them separately.
 
