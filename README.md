@@ -1,12 +1,15 @@
-DAL (Document Analysis Layout): Sharan Ravula
+# DAL (Document Analysis Layout): Sharan Ravula
 
 ---
 
 > In this project, in the upload UI, you have to choose the analysis mode, which is basically changing the dpi of an Image, when we use OCR in a project dpi of the image is really important for OCR to detect text.
-I have shared the necessary info on DPI change for the small and Large analysis mode, obviously you can use custom option and customize the dpi of an image however you like! Enjoy this Project of Mine.
+> I have shared the necessary info on DPI change for the small and Large analysis mode, obviously you can use custom option and customize the dpi of an image however you like! Enjoy this Project of Mine.
 
 ---
 
+### 📂 Project Structure
+
+```text
 DAL-Project/
 │
 ├── DAL-ProjectOCR.py        # Main Flask app
@@ -33,10 +36,10 @@ In the terminal make sure you cd to the project folder i.e. ~/DAL-Project/
 1. Create a Virtual Environment in the path you open the file:
 	
 	- macOS / Linux:
-		```	
-		python3 -m venv venv
-		source venv/bin/activate
 		```
+  		python3 -m venv venv
+		source venv/bin/activate
+  		```
 	- Windows:
 		```
 		python -m venv venv
