@@ -26,6 +26,7 @@ DAL-Project/
 ├── static/                  # Saving annotated images and JSON output. (Auto-created)
 ├── Test-Cases/              # Contains multiple test-case files
 └── README.txt               # Instruction Manual - Please read it
+```
 
 After opening the zip file, 
 
