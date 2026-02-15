@@ -56,12 +56,13 @@ In the terminal make sure you cd to the project folder i.e. ~/DAL-Project/
 
 	   - Open PowerShell as Administrator.
 	   - Run the following command to install Chocolatey:
-	
-		`Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`
+		```
+		Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+   		```
 
 	   - Close and reopen your PowerShell, then verify Chocolatey is installed:
 
-		`choco --version`
+		```choco --version```
 	
 4. Install Dependencies: First, make sure pip is updated:
 		
@@ -83,15 +84,15 @@ In the terminal make sure you cd to the project folder i.e. ~/DAL-Project/
 
 	- macOS
 	
-		`python3 DAL-ProjectOCR.py`
+		```python3 DAL-ProjectOCR.py```
 
 	- Windows
 		
-		`python DAL-ProjectOCR.py`
+		```python DAL-ProjectOCR.py```
 
 6. Usage:
 
-	`http://127.0.0.1:5000`
+	```http://127.0.0.1:5000```
 
 7. Troubleshooting:
 
