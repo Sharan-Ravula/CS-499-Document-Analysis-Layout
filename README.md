@@ -39,11 +39,13 @@ In the terminal make sure you cd to the project folder i.e. ~/DAL-Project/
 	- macOS / Linux:
 
 		```python3 -m venv venv```
+
 		```source venv/bin/activate```
 
 	- Windows:
 
 		```python -m venv venv```
+
 		```.\venv\Scripts\activate```
 
 2. Install Homebrew (optional but recommended):
@@ -70,15 +72,19 @@ In the terminal make sure you cd to the project folder i.e. ~/DAL-Project/
 	- macOS/Linux
 
 		```python3 -m pip install --upgrade pip```
+
 		```pip --version```
+
 		```pip install flask pdfplumber easyocr pyzbar pillow numpy pytesseract```
 
    > A new file will be added to the DAL-Project Folder i.e. venv
 
 	- Windows
-		```
+
 		```python -m pip install --upgrade pip```
+
 		```pip --version```
+
 		```pip install flask pdfplumber easyocr pyzbar pillow numpy pytesseract```
 
   > A new file will be added to the DAL-Project Folder i.e. venv
