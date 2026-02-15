@@ -26,7 +26,7 @@ DAL-Project/
 ├── uploads/                 # Storing the PDF/Image files users upload. (Auto-created)
 ├── static/                  # Saving annotated images and JSON output. (Auto-created)
 ├── Test-Cases/              # Contains multiple test-case files
-└── README.txt               # Instruction Manual - Please read it
+└── README.md               # Instruction Manual - Please read it
 ```
 
 After opening the zip file, 
