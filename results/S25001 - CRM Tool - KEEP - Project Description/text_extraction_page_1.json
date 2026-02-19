@@ -1,0 +1,62 @@
+{
+    "page": 1,
+    "boxes": [
+        {
+            "text": "Title: CRM Tool",
+            "x": 489,
+            "y": 508,
+            "width": 532,
+            "height": 89
+        },
+        {
+            "text": "Company: Kentucky Equine Education Project (KEEP)",
+            "x": 485,
+            "y": 670,
+            "width": 1810,
+            "height": 123
+        },
+        {
+            "text": "Client: Brittany Bell",
+            "x": 487,
+            "y": 843,
+            "width": 673,
+            "height": 114
+        },
+        {
+            "text": "Client Email: brittany@horseswork.com",
+            "x": 489,
+            "y": 1026,
+            "width": 1359,
+            "height": 108
+        },
+        {
+            "text": "Project Summary:",
+            "x": 489,
+            "y": 1370,
+            "width": 627,
+            "height": 111
+        },
+        {
+            "text": "Our project focuses on developing an updated customer management tool tailored to streamline membership database for an organization with nearly 2,000 active members. The primary the goalis to enhance the overall user experience by improving mobile functionality for both registration and access to unique membership cards The tool will provide a seamless interface for members, enabling them to update their personal information effortlessly while ensuring their data remains secure: By addressing the current system's limitations, this solution aims to modernize membership management; offering convenience and accessibility for members and administrators alike.",
+            "x": 482,
+            "y": 1575,
+            "width": 3257,
+            "height": 816
+        },
+        {
+            "text": "Future key features of the tool would ideally include a robust mobile-friendly platform, real-time data synchronization, and advanced administrative tools for updating and managingmember information effectively:",
+            "x": 485,
+            "y": 2491,
+            "width": 3215,
+            "height": 316
+        },
+        {
+            "text": "The system will be designed to accommodate future scalability and integrate additional features as needed. By implementing this solution, the organization will not only improve operational efficiency but also foster stronger engagement with its members This project reflects a commitment to leveraging technology to deliver a streamlined, user-centric membership experience.",
+            "x": 482,
+            "y": 2899,
+            "width": 3236,
+            "height": 523
+        }
+    ],
+    "text": "Title: CRM Tool Company: Kentucky Equine Education Project (KEEP) Client: Brittany Bell Client Email: brittany@horseswork.com Project Summary: Our project focuses on developing an updated customer management tool tailored to streamline the membership database for an organization with nearly 2,000 active members. The primary goalis to enhance the overall user experience by improving mobile functionality for both registration and access to unique membership cards The tool will provide a seamless interface for members, enabling them to update their personal information effortlessly while ensuring their data remains secure: By addressing the current system's limitations, this solution aims to modernize membership management; offering convenience and accessibility for members and administrators alike. Future key features of the tool would ideally include a robust mobile-friendly platform, real-time data synchronization, and advanced administrative tools for updating and managingmember information effectively: The system will be designed to accommodate future scalability and integrate additional features as needed. By implementing this solution, the organization will not only improve operational efficiency but also foster stronger engagement with its members This project reflects a commitment to leveraging technology to deliver a streamlined, user-centric membership experience."
+}

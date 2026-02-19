@@ -1,0 +1,27 @@
+{
+    "page": 3,
+    "boxes": [
+        {
+            "text": "3",
+            "x": 2226,
+            "y": 160,
+            "width": 27,
+            "height": 37
+        },
+        {
+            "text": "judge: 108 governor: 64 trial: 72 indecent: 3 white: 122 drunk: 4 confession: 10 tree: 120 swing: 2 bullet: 20 woman: 78 women: 24 assault: 63 wound: 13 fight: 16 farm: 36 jailer: 149 jail: 439",
+            "x": 289,
+            "y": 305,
+            "width": 310,
+            "height": 1003
+        },
+        {
+            "text": "Related and upcoming project Usinga semi-structured data-set of legal proceedings in Kentucky related to the passage of Jim Crow laws. This includes mining of legislative archives and legal documents from 1890 to 1975 showing the evolution of Jim Crow laws. This project can be done concurrently with the Documenting Racial Violence in Kentucky project: Please contact Nikki Brown for more information on this associated project.",
+            "x": 292,
+            "y": 1366,
+            "width": 1923,
+            "height": 346
+        }
+    ],
+    "text": "3 judge: 108 governor: 64 trial: 72 indecent: 3 white: 122 drunk: 4 confession: 10 tree: 120 swing: 2 bullet: 20 woman: 78 women: 24 assault: 63 wound: 13 fight: 16 farm: 36 jailer: 149 jail: 439 Related and upcoming project Usinga semi-structured data-set of legal proceedings in Kentucky related to the passage of Jim Crow laws. This includes mining of legislative archives and legal documents from 1890 to 1975 showing the evolution of Jim Crow laws. This project can be done concurrently with the Documenting Racial Violence in Kentucky project: Please contact Nikki Brown for more information on this associated project."
+}

@@ -1,0 +1,111 @@
+{
+    "page": 1,
+    "boxes": [
+        {
+            "text": "Title: V-Feed : ) - Feeding Valvoline Al System",
+            "x": 293,
+            "y": 296,
+            "width": 968,
+            "height": 72
+        },
+        {
+            "text": "Company: Valvoline Global Operations",
+            "x": 292,
+            "y": 406,
+            "width": 850,
+            "height": 69
+        },
+        {
+            "text": "Client: (Internal project; not outside clients involved)",
+            "x": 294,
+            "y": 509,
+            "width": 1139,
+            "height": 66
+        },
+        {
+            "text": "Client Email: Yaprak yigit-yalniz@valvolineglobaLcom & tllatham@valvolineglobaLcom",
+            "x": 294,
+            "y": 616,
+            "width": 1879,
+            "height": 64
+        },
+        {
+            "text": "Project Summary: The project focuses on leveraging artificial intelligence to create a data analysis assistant capable of responding to complex queries about a dataset: The assistant will combine natural language processing (NLP) with data visualization tools to ensure that users can easily interact with the dataset and gain actionable insights. This toolaims to democratize data accessibility and support decision-making processes through intuitive question-answering capabilities and dynamic visual representations.",
+            "x": 289,
+            "y": 716,
+            "width": 1924,
+            "height": 428
+        },
+        {
+            "text": "Key Deliverables",
+            "x": 290,
+            "y": 1177,
+            "width": 445,
+            "height": 74
+        },
+        {
+            "text": "Project Plan A detailed roadmap outlining milestones, timelines, and resources needed for the project: Dataset Preparation Aclean, structured dataset (provided or identified during the project). Documentation detailing the dataset attributes and potential use cases. Al Model Development NLP model fine-tuned to understand and respond to user queries related to the dataset: Integration of a robust data analysis engine to ensure precise answers Visualization Framework Capability to generate various visualization formats such as charts, graphs, and dashboards. User-friendly design for selecting and customizing visualizations Prototype Tool functional tool or application that integrates the trained Al model with a user interface allowing users to: A Ask detailed questions: Receive accurate answers_ Access visual data representations: Testing and Validation Performance metrics for the Al model (e.g., accuracy, response time): User feedback on tool usability and accuracy: Documentation User manual and technical documentation for the developed tool. Instructions for future improvements or scaling: Final Presentation comprehensive project presentation showcasing: A Challenges and solutions encountered: Key features and functionality of the developed tool",
+            "x": 439,
+            "y": 1293,
+            "width": 1770,
+            "height": 1680
+        },
+        {
+            "text": "1.",
+            "x": 373,
+            "y": 1299,
+            "width": 37,
+            "height": 39
+        },
+        {
+            "text": "2.",
+            "x": 373,
+            "y": 1466,
+            "width": 37,
+            "height": 43
+        },
+        {
+            "text": "Image/Logo/Symbol Detected",
+            "x": 374,
+            "y": 1635,
+            "width": 32,
+            "height": 38
+        },
+        {
+            "text": "4.",
+            "x": 373,
+            "y": 1858,
+            "width": 37,
+            "height": 40
+        },
+        {
+            "text": "5.",
+            "x": 373,
+            "y": 2083,
+            "width": 37,
+            "height": 42
+        },
+        {
+            "text": "6.",
+            "x": 370,
+            "y": 2418,
+            "width": 43,
+            "height": 42
+        },
+        {
+            "text": "7.",
+            "x": 370,
+            "y": 2586,
+            "width": 40,
+            "height": 42
+        },
+        {
+            "text": "8.",
+            "x": 370,
+            "y": 2753,
+            "width": 40,
+            "height": 42
+        }
+    ],
+    "text": "Title: V-Feed : ) - Feeding Valvoline Al System Company: Valvoline Global Operations Client: (Internal project; not outside clients involved) Client Email: Yaprak yigit-yalniz@valvolineglobaLcom & tllatham@valvolineglobaLcom Project Summary: The project focuses on leveraging artificial intelligence to create a data analysis assistant capable of responding to complex queries about a dataset: The assistant will combine natural language processing (NLP) with data visualization tools to ensure that users can easily interact with the dataset and gain actionable insights. This toolaims to democratize data accessibility and support decision-making processes through intuitive question-answering capabilities and dynamic visual representations. Key Deliverables 1. Project Plan A detailed roadmap outlining milestones, timelines, and resources needed for the project: 2. Dataset Preparation Aclean, structured dataset (provided or identified during the project). Documentation detailing the dataset attributes and potential use cases. 3_ Al Model Development NLP model fine-tuned to understand and respond to user queries related to the dataset: Integration of a robust data analysis engine to ensure precise answers 4. Visualization Framework Capability to generate various visualization formats such as charts, graphs, and dashboards. User-friendly design for selecting and customizing visualizations 5. Prototype Tool A functional tool or application that integrates the trained Al model with a user interface allowing users to: Ask detailed questions: Receive accurate answers_ Access visual data representations: 6. Testing and Validation Performance metrics for the Al model (e.g., accuracy, response time): User feedback on tool usability and accuracy: 7. Documentation User manual and technical documentation for the developed tool. Instructions for future improvements or scaling: 8. Final Presentation A comprehensive project presentation showcasing: Challenges and solutions encountered: Key features and functionality of the developed tool"
+}

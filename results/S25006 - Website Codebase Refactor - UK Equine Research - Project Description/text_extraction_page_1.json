@@ -1,0 +1,41 @@
+{
+    "page": 1,
+    "boxes": [
+        {
+            "text": "Project 2-Thoroughbred Racehorse_Website Codebase Refactor",
+            "x": 781,
+            "y": 490,
+            "width": 1838,
+            "height": 80
+        },
+        {
+            "text": "The MacLeod Musculoskeletal laboratory in the Gluck Equine Research Center has long focused improving the safety and welfare of Thoroughbred racehorses primary objective of the lab A on is to understand the causes and risk factors of joint disease and lower forelimb bone fractures within these elite athletes To study the biological processes of bone adaptation and maladaptation to the intense biomechanical forces of horseracing, computed tomography (CT) scans have been performed on a large study set of lower forelimbs   Utilizing these data, research projects in the laboratory investigate different orthopedic biomedical questions and provide support to equine veterinarians Examples include how the structure of bones change in response to high-speed exercise, risk factors predisposing a Thoroughbred racehorse to potentially catastrophic musculoskeletal injuries, and epidemiological data to help with diagnostic and prognostic considerations after an injury occurs.",
+            "x": 380,
+            "y": 641,
+            "width": 2627,
+            "height": 977
+        },
+        {
+            "text": "The lab is currently collecting data on Thoroughbred racehorses that sustained a catastrophic musculoskeletal injury and storing them through a custom-made website. However; this website It currently uses html, javascript, and css, with the database being is in need of some updates. MySQL. The overarching is to refactor the codebase with modern features and a modern goal framework; Nodejs, to make future developments easier to implement: While this itself is a big undertaking, we would like to first focus 0 a few core functionalities",
+            "x": 388,
+            "y": 1699,
+            "width": 2605,
+            "height": 535
+        },
+        {
+            "text": "Key Features Codebase: Maintain the use of Docker in setting up testing environments: 1. developers to work o coding projects. Docker is an easy way to setup new Utilized a Model, Controller, View Architecture (MVC): Refactor the code to follow a MVC architecture to maintain consistent application 2. logic. Develop unit testing: being refactored, develop unit testing to systematically ensure As the codebase is code is working: 3.",
+            "x": 390,
+            "y": 2406,
+            "width": 2611,
+            "height": 794
+        },
+        {
+            "text": "The objective of this platform is to enhance how equine forelimb skeletal injuries are visualized and understood.  By making our research more accessible and easier to understand, we aim to foster collaboration, enhance veterinary education, and ultimately contribute to the prevention of By serious musculoskeletal injuries in Thoroughbred racehorses. platform we can introduce future developments and analysis in understanding Thoroughbred taking steps to update this racehorses This is an opportunity to recreate real-life web applications",
+            "x": 381,
+            "y": 3273,
+            "width": 2613,
+            "height": 537
+        }
+    ],
+    "text": "Project 2-Thoroughbred Racehorse_Website Codebase Refactor The MacLeod Musculoskeletal laboratory in the Gluck Equine Research Center has long focused on improving the safety and welfare of Thoroughbred racehorses A primary objective of the lab is to understand the causes and risk factors of joint disease and lower forelimb bone fractures within these elite athletes To study the biological processes of bone adaptation and maladaptation to the intense biomechanical forces of horseracing, computed tomography (CT) scans have been performed on a large study set of lower forelimbs   Utilizing these data, research projects in the laboratory investigate different orthopedic biomedical questions and provide support to equine veterinarians Examples include how the structure of bones change in response to high-speed exercise, risk factors predisposing a Thoroughbred racehorse to potentially catastrophic musculoskeletal injuries, and epidemiological data to help with diagnostic and prognostic considerations after an injury occurs. The lab is currently collecting data on Thoroughbred racehorses that sustained a catastrophic musculoskeletal injury and storing them through a custom-made website. However; this website is in need of some updates. It currently uses html, javascript, and css, with the database being MySQL. The overarching is to refactor the codebase with modern features and a modern framework; Nodejs, to make future developments easier to implement: While this itself is a big undertaking, we would like to first focus 0 a few core functionalities Key Features Codebase: 1. Maintain the use of Docker in setting up testing environments: Docker is an easy way to setup new developers to work o coding projects. 2. Utilized a Model, Controller, View Architecture (MVC): Refactor the code to follow a MVC architecture to maintain consistent application logic. 3. Develop unit testing: As the codebase is being refactored, develop unit testing to systematically ensure code is working: The objective of this platform is to enhance how forelimb skeletal injuries are visualized and understood.  By making our research more accessible and easier to understand, we aim to foster collaboration, enhance veterinary education, and ultimately contribute to the prevention of serious musculoskeletal injuries in Thoroughbred racehorses. taking steps to update this platform we can introduce future developments and analysis in understanding Thoroughbred racehorses This is an opportunity to recreate real-life web applications goal equine By"
+}

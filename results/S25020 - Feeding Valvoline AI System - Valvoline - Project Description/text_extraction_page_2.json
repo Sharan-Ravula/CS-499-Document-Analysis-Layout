@@ -1,0 +1,20 @@
+{
+    "page": 2,
+    "boxes": [
+        {
+            "text": "Live demonstration of the tool's capabilities.",
+            "x": 745,
+            "y": 302,
+            "width": 885,
+            "height": 61
+        },
+        {
+            "text": "This project will provide the students with hands-on experience in cutting-edge Al technologies, including NLP, data visualization, and system integration. It will also teach them the value of cross- disciplinary collaboration and user-centric design.",
+            "x": 290,
+            "y": 454,
+            "width": 1958,
+            "height": 193
+        }
+    ],
+    "text": "Live demonstration of the tool's capabilities. This project will provide the students with hands-on experience in cutting-edge Al technologies, including NLP, data visualization, and system integration. It will also teach them the value of cross- disciplinary collaboration and user-centric design."
+}

@@ -1,0 +1,62 @@
+{
+    "page": 1,
+    "boxes": [
+        {
+            "text": "Papa Johns Project Proposal #2: Al Rule Extraction and Categorization of Pricing Engine Company: Papa Johns Inc Client: Benjamin Keener (Email: Benjamin_keener@papajohns com)",
+            "x": 140,
+            "y": 146,
+            "width": 1978,
+            "height": 200
+        },
+        {
+            "text": "Objective Establish a structured knowledge base by extracting, categorizing; and documenting existing pricing rules from Papa Johns current pricing engine This effort will also identify areas of complexity and recommend simplifications to support future rule management and system enhancements:",
+            "x": 141,
+            "y": 418,
+            "width": 2252,
+            "height": 257
+        },
+        {
+            "text": "Scope Analysis and Extraction: Use Al techniques (NLP, ML) to analyze the pricing engine code and extract rules, such as discounts, upsells, and bundle deals. Categorization and Organization: Create a structured repository for extracted rules, with logical groupings to simplify management: Documentation: Clearly document each rule's logic, conditions, dependencies, and any associated complexities: Complexity Identification and Simplification: Highlight overly intricate rules, duplicate logic, and opportunities for streamlining, offering recommendations for simplification.",
+            "x": 142,
+            "y": 746,
+            "width": 2260,
+            "height": 592
+        },
+        {
+            "text": "Intermediate Deliverables",
+            "x": 145,
+            "y": 1409,
+            "width": 555,
+            "height": 49
+        },
+        {
+            "text": "System Constraints and Complexity Report: Analyze the pricing engine to identify key constraints, sources of complexity, and prioritized rule inputs: Prototype Rules Framework: Develop an initial structured framework to categorize and store rules, incorporating simplifications where feasible Initial Rule Documentation: Draft documentation of high-priority rules, detailing logic, conditions, dependencies, and areas of complexity. Implementation Recommendations: Propose tools, technologies, personnel, processes, and governance to develop a scalable and simplified rules engine. Preliminary Validation and Simplification Suggestions: Validate extracted rules and propose simplifications to align with business needs and reduce future maintenance burdens:",
+            "x": 291,
+            "y": 1472,
+            "width": 2059,
+            "height": 659
+        },
+        {
+            "text": "Deliverables",
+            "x": 148,
+            "y": 2206,
+            "width": 273,
+            "height": 49
+        },
+        {
+            "text": "Extracted Rules Framework: A prototype repository of categorized and prioritized rules. Rule Documentation: Comprehensive documentation with a focus on logic, conditions, dependencies, and simplification opportunities. Complexity Report: A detailed report on rule complexities and recommended strategies for simplification. Implementation Plan: Strategic guidance for transitioning to a scalable and simplified rules engine.",
+            "x": 294,
+            "y": 2268,
+            "width": 2104,
+            "height": 333
+        },
+        {
+            "text": "Expected Outcomes Clear understanding of existing pricing rules, including complexities and simplification opportunities. structured foundation for scalable and manageable rule management. Simplified rules and processes, reducing future maintenance and enhancing system agility: Progress toward modernizing the pricing engine while delivering actionable intermediate results.",
+            "x": 143,
+            "y": 2668,
+            "width": 2140,
+            "height": 336
+        }
+    ],
+    "text": "Papa Johns Project Proposal #2: Al Rule Extraction and Categorization of Pricing Engine Company: Papa Johns Inc Client: Benjamin Keener (Email: Benjamin_keener@papajohns com) Objective Establish a structured knowledge base by extracting, categorizing; and documenting existing pricing rules from Papa Johns current pricing engine This effort will also identify areas of complexity and recommend simplifications to support future rule management and system enhancements: Scope Analysis and Extraction: Use Al techniques (NLP, ML) to analyze the pricing engine code and extract rules, such as discounts, upsells, and bundle deals. Categorization and Organization: Create a structured repository for extracted rules, with logical groupings to simplify management: Documentation: Clearly document each rule's logic, conditions, dependencies, and any associated complexities: Complexity Identification and Simplification: Highlight overly intricate rules, duplicate logic, and opportunities for streamlining, offering recommendations for simplification. Intermediate Deliverables System Constraints and Complexity Report: Analyze the pricing engine to identify key constraints, sources of complexity, and prioritized rule inputs: Prototype Rules Framework: Develop an initial structured framework to categorize and store rules, incorporating simplifications where feasible Initial Rule Documentation: Draft documentation of high-priority rules, detailing logic, conditions, dependencies, and areas of complexity. Implementation Recommendations: Propose tools, technologies, personnel, processes, and governance to develop a scalable and simplified rules engine. Preliminary Validation and Simplification Suggestions: Validate extracted rules and propose simplifications to align with business needs and reduce future maintenance burdens: Deliverables Extracted Rules Framework: A prototype repository of categorized and prioritized rules. Rule Documentation: Comprehensive documentation with a focus on logic, conditions, dependencies, and simplification opportunities. Complexity Report: A detailed report on rule complexities and recommended strategies for simplification. Implementation Plan: Strategic guidance for transitioning to a scalable and simplified rules engine. Expected Outcomes Clear understanding of existing pricing rules, including complexities and simplification opportunities. structured foundation for scalable and manageable rule management. Simplified rules and processes, reducing future maintenance and enhancing system agility: Progress toward modernizing the pricing engine while delivering actionable intermediate results."
+}
