@@ -170,7 +170,7 @@ The script does not guess resolutions based on a filename; instead, it uses the 
 
 ## 🔥 Getting Started
 
-💥 Setup and Installation:
+💥 **Setup and Installation**:
 
 > After opening the zip file
 
@@ -178,46 +178,46 @@ The script does not guess resolutions based on a filename; instead, it uses the 
 
 > In the terminal make sure you `cd` to the project folder i.e. ~/CS-499-Document-Analysis-Layout/
 
-1. Create a Virtual Environment in the path you open the file:
+1. **Create a Virtual Environment in the path you open the file**:
 	
-	- macOS / Linux:
+	- **macOS/Linux**:
 
       ```bash
 	  python3 -m venv venv
 	  source venv/bin/activate
       
-	- Windows:
+	- **Windows**:
 
 	  ```powershell
 	  python -m venv venv
 	  .\venv\Scripts\activate
    
-2. Install Homebrew (optional but recommended):
+2. **Install Homebrew** (optional but recommended):
 
-	- macOS:
+	- **macOS/Linux**:
 
 	  ```bash
 	  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-   - Windows: On Windows, you can use Chocolatey as a package manager.
+   - **Windows**: On Windows, you can use Chocolatey as a package manager.
 
-		> (Note: If you prefer to use Homebrew on Windows, consider installing it via WSL (Windows Subsystem for Linux) and following the macOS instructions within your WSL terminal.)
+		> Note: If you prefer to use Homebrew on Windows, consider installing it via WSL (Windows Subsystem for Linux) and following the macOS instructions within your WSL terminal.
 
-	   - Open PowerShell as Administrator.
+	    > Open PowerShell as Administrator.
        
-	   - Run the following command to install Chocolatey:
+	   - **Run the following command to install Chocolatey**:
        
 	     ```powershell
 		 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
       
-	  	- Close and reopen your PowerShell, then verify Chocolatey is installed:
+	  	- **Close and reopen your PowerShell, then verify Chocolatey is installed**:
        
 		  ```powershell
           choco --version
     
-3. Install Dependencies: First, make sure pip is updated:
+3. **Install Dependencies: First, make sure pip is updated**:
 		
-	- macOS/Linux:
+	- **macOS/Linux**:
 
 	  ```bash
 	  python3 -m pip install --upgrade pip
@@ -226,7 +226,7 @@ The script does not guess resolutions based on a filename; instead, it uses the 
    
    > A new file will be added to the DAL-Project Folder i.e. venv
 
-	- Windows:
+	- **Windows**:
 
 	  ```powershell
 	  python -m pip install --upgrade pip
@@ -235,29 +235,29 @@ The script does not guess resolutions based on a filename; instead, it uses the 
    
   > A new file will be added to the DAL-Project Folder i.e. venv
 
-4. Run the App:
+4. **Run the App**:
 
-	- macOS/Linux:
+	- **macOS/Linux**:
 
 	  ```bash
 	  python3 dal_ocr_project.py
       python3 coordinates.py
    
-	- Windows:
+	- **Windows**:
 
 	  ```powershell
 	  python dal_ocr_project.py
       python coordinates.py
 
-5. Usage:
+5. **Usage**:
 
    ```text
    http://127.0.0.1:5000
-6. Troubleshooting:
+6. **Troubleshooting**:
 
-	- For large PDFs, ensure you have enough RAM and CPU cores.
+	- For large PDFs, ensure you have enough `RAM` and `CPU` cores.
 
-	- If EasyOCR fails to load, make sure PyTorch is correctly installed.
+	- If `EasyOCR` fails to load, make sure `PyTorch` is correctly installed.
 
 	- "CropBox missing from /Page, defaulting to MediaBox" is just a info which we can safely ignore as it wont effect any functionality of the project.
 
@@ -269,7 +269,7 @@ The script does not guess resolutions based on a filename; instead, it uses the 
 
 	- The drag box wont move when you first upload the file, you have to delete the drag box by clicking the "x" icon on the top right corner of the border, and press the button "More Drag-Boxes" only then it works properly, I dont know why this glitch is happening but it is a very small one so I ignored it.
 
-7. Additional Nerdy-Stuff:
+7. **Additional Nerdy-Stuff**:
 
 	- The other modules like `json`, `time`, `os`, `re`, and `multiprocessing` are part of Python’s standard library, so you don’t need to install them separately.
 
