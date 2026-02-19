@@ -100,6 +100,74 @@ DAL-Project/
 
 ---
 
+## 📐 Coordinate Transformation & Scaling
+
+To ensure the analysis is accurate regardless of the display size, the project includes a specialized script, `coordinates.py`, to map OCR results from the "processed" (resized/DPI-adjusted) image back to the "original" document dimensions. 
+
+🛠 **How `coordinates.py` Works**:
+
+The script does not guess resolutions based on a filename; instead, it uses the actual file properties from the most recent execution: 
+
+- **`last_paths.json` Integration**: When you run the main Flask app (`dal-ocr_project.py`), it automatically saves the absolute paths of the original file, the processed image, and the OCR JSON output into `last_paths.json` 
+
+- **Automatic Retrieval**: When you execute `python3 coordinates.py`, it reads this JSON file to identify exactly which files need coordinate correction. 
+
+- **Dynamic Dimension Detection**:
+
+	- **For PDFs**: The script uses `pdf2image` to convert the first page at 300 DPI to establish the "original" reference dimensions. 
+	
+	- **For Images**: It utilizes the `Pillow` library to read the pixel dimensions directly from the source file. 
+
+- **Scaling Calculation**: The script compares the original dimensions against the processed image dimensions to calculate the $`ratio\_x`$ and $`ratio\_y`$ scaling factors. 
+
+---
+
+## 📐 Mathematical Formulas
+
+- **Scaling Factor Calculation**
+
+	- First, the script determines how much the image was scaled during processing by comparing the dimensions of the processed image to the original.
+	
+		- $`ratio_x` = `\frac{\text{processed\_width}}{\text{original\_width}}`$
+		
+		- $`ratio_y` = `\frac{\text{processed\_height}}{\text{original\_height}}`$
+	
+	- **Original Dimensions**: For PDFs, this is established by rendering the first page at a standard 300 DPI.
+	
+	- Processed Dimensions: These are the pixel dimensions of the image actually sent to the OCR engine.
+
+- **Coordinate Inverse Transformation**
+
+	- Once the ratios are known, the script converts the bounding box coordinates $(`x, y`)$ and dimensions (width, height) from the "processed" system back to the "original" system using division.
+
+		- For Points:
+
+			- $`x_{orig}` = `\frac{x_{proc}}{ratio_x}`$
+     
+			- $`y_{orig}` = `\frac{y_{proc}}{ratio_y}`$
+
+		- For Bounding Boxes:
+
+			- $`\text{width}_{orig}` = `\frac{\text{width}_{proc}}{ratio_x}`$
+
+			- $`\text{height}_{orig}` = `\frac{\text{height}_{proc}}{ratio_y}`$
+
+- **Corner Point Mapping**
+
+	- The script also updates the four corners of each detected text block. If the OCR data includes corner coordinates, they are transformed individually; otherwise, they are reconstructed from the original $`x`$, $`y`$, width, and height:
+
+		- **Top-Left**: $`(x_{orig}, y_{orig})`$
+		
+		- **Top-Right**: $`(x_{orig} + \text{width}_{orig}, y_{orig})`$
+		
+		- **Bottom-Left**: $`(x_{orig}, y_{orig} + \text{height}_{orig})`$
+		
+		- **Bottom-Right**: $`(x_{orig} + \text{width}_{orig}, y_{orig} + \text{height}_{orig})`$
+
+	- This ensures that regardless of whether the analysis was done in Small or Large mode, the resulting JSON data aligns perfectly with the original file's coordinate space.
+
+----
+
 ## 🔥 Getting Started
 
 💥 Setup and Installation:
@@ -142,12 +210,12 @@ DAL-Project/
 	     ```powershell
 		 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
       
-	   - Close and reopen your PowerShell, then verify Chocolatey is installed:
+	  	- Close and reopen your PowerShell, then verify Chocolatey is installed:
        
-	     ```
-         choco --version
+		  ```powershell
+          choco --version
     
-4. Install Dependencies: First, make sure pip is updated:
+3. Install Dependencies: First, make sure pip is updated:
 		
 	- macOS/Linux:
 
@@ -167,24 +235,25 @@ DAL-Project/
    
   > A new file will be added to the DAL-Project Folder i.e. venv
 
-5. Run the App:
+4. Run the App:
 
-	- macOS:
+	- macOS/Linux:
 
 	  ```bash
 	  python3 dal_ocr_project.py
+      python3 coordinates.py
    
 	- Windows:
 
 	  ```powershell
 	  python dal_ocr_project.py
+      python coordinates.py
 
-6. Usage:
-   
+5. Usage:
+
    ```text
    http://127.0.0.1:5000
-   
-8. Troubleshooting:
+6. Troubleshooting:
 
 	- For large PDFs, ensure you have enough RAM and CPU cores.
 
@@ -200,7 +269,7 @@ DAL-Project/
 
 	- The drag box wont move when you first upload the file, you have to delete the drag box by clicking the "x" icon on the top right corner of the border, and press the button "More Drag-Boxes" only then it works properly, I dont know why this glitch is happening but it is a very small one so I ignored it.
 
-9. Additional Nerdy-Stuff:
+7. Additional Nerdy-Stuff:
 
 	- The other modules like `json`, `time`, `os`, `re`, and `multiprocessing` are part of Python’s standard library, so you don’t need to install them separately.
 
