@@ -15,13 +15,13 @@ The primary challenge was to automate the segmentation of enterprise-scale commu
 
 Key highlights include:
 
-- **Dual OCR Engines**: Support for both `TesseractOCR` and `EasyOCR`
+- Dual OCR Engines: Support for both `TesseractOCR` and `EasyOCR`
 
-- **Intelligent Scaling**: `Adaptive DPI adjustment` (Small/Large analysis modes) to optimize character recognition.
+- Intelligent Scaling: `Adaptive DPI adjustment` (Small/Large analysis modes) to optimize character recognition.
 
-- **Barcode Integration**: Native detection using `pyzbar` merged with spatial text data.
+- Barcode Integration: Native detection using `pyzbar` merged with spatial text data.
 
-- **Visual Debugging**: A browser-based display that overlays analyzed zones (`bounding boxes`) onto the original image.
+- Visual Debugging: A browser-based display that overlays analyzed zones (`bounding boxes`) onto the original image.
 
 ---
 
@@ -58,45 +58,45 @@ DAL-Project/
 
 ## 🛠 Project Stakeholders & History
 
-- **Company**: `OpenText Exstream`
+- Company: `OpenText Exstream`
 
-- **Primary Contacts**:
+- Primary Contacts:
 
 	- `Nathan McConathy`: **OpenText Senior Design Project Customer**
 
 	- `Billy Kidwell`: **OpenText Senior Design Project Instructor**
 
-- **Development Process**: Conducted via `weekly agile meetings` to review updates, discuss algorithm refinements, and validate against enterprise document samples.
+- Development Process: Conducted via `weekly agile meetings` to review updates, discuss algorithm refinements, and validate against enterprise document samples.
 
-- **Outcome**: Successfully transitioned from a university prototype to a `patented document` analysis methodology.
+- Outcome: Successfully transitioned from a university prototype to a `patented document` analysis methodology.
 
 ---
 
 ## ⚙️ Technical Specifications
 
-- **Backend**: `Python` (**Flask**)
+- Backend: `Python` (**Flask**)
 
-- **OCR Engines**: `EasyOCR` (Deep Learning based) and `PyTesseract`
+- OCR Engines: `EasyOCR` (Deep Learning based) and `PyTesseract`
 
-- **Image Processing**: `Pillow`, `NumPy`, and `pdfplumber`
+- Image Processing: `Pillow`, `NumPy`, and `pdfplumber`
 
-- **Barcode Detection**: `pyzbar`
+- Barcode Detection: `pyzbar`
 
-- **Performance**: Optimized for `<10s processing time` per document page.
+- Performance: Optimized for `<10s processing time` per document page.
 
-- **Frontend**: Clean, professional `HTML`,`JS`,`CSS` suite for real-time visualization of extracted "zones."
+- Frontend: Clean, professional `HTML`,`JS`,`CSS` suite for real-time visualization of extracted "zones."
 
 ---
 
 ## 🧪 Key Features
 
-- **Analysis Modes**: Users can select "`Small`," "`Large`," or "`Custom`" modes which dynamically adjust the image DPI to ensure the OCR engine captures text accurately regardless of font size.
+- Analysis Modes: Users can select "`Small`," "`Large`," or "`Custom`" modes which dynamically adjust the image DPI to ensure the OCR engine captures text accurately regardless of font size.
 
-- **Coordinate Mapping**: A custom `coordinates.py` module ensures that bounding boxes found on processed/resized images are accurately mapped back to the original document's dimensions.
+- Coordinate Mapping: A custom `coordinates.py` module ensures that bounding boxes found on processed/resized images are accurately mapped back to the original document's dimensions.
 
-- **Data Export**: Generates computer-readable `JSON outputs` containing text content, spatial coordinates, and corner-point arrays.
+- Data Export: Generates computer-readable `JSON outputs` containing text content, spatial coordinates, and corner-point arrays.
 
-- **Layout Visualization**: Highlights `text blocks in blue/red` and `barcodes in green` to verify the "whitespace-based" segmentation algorithm.
+- Layout Visualization: Highlights `text blocks in blue/red` and `barcodes in green` to verify the "whitespace-based" segmentation algorithm.
 
 ---
 
@@ -104,27 +104,27 @@ DAL-Project/
 
 To ensure the analysis is accurate regardless of the display size, the project includes a specialized script, `coordinates.py`, to map OCR results from the "processed" (resized/DPI-adjusted) image back to the "original" document dimensions. 
 
-🛠 **How `coordinates.py` Works**:
+🛠 How `coordinates.py` Works:
 
 The script does not guess resolutions based on a filename; instead, it uses the actual file properties from the most recent execution: 
 
-- **`last_paths.json` Integration**: When you run the main Flask app (`dal-ocr_project.py`), it automatically saves the absolute paths of the original file, the processed image, and the OCR JSON output into `last_paths.json` 
+- `last_paths.json` Integration: When you run the main Flask app (`dal-ocr_project.py`), it automatically saves the absolute paths of the original file, the processed image, and the OCR JSON output into `last_paths.json` 
 
-- **Automatic Retrieval**: When you execute `python3 coordinates.py`, it reads this JSON file to identify exactly which files need coordinate correction. 
+- Automatic Retrieval: When you execute `python3 coordinates.py`, it reads this JSON file to identify exactly which files need coordinate correction. 
 
-- **Dynamic Dimension Detection**:
+- Dynamic Dimension Detection:
 
-	- **For PDFs**: The script uses `pdf2image` to convert the first page at 300 DPI to establish the "original" reference dimensions. 
+	- For PDFs: The script uses `pdf2image` to convert the first page at 300 DPI to establish the "original" reference dimensions. 
 	
-	- **For Images**: It utilizes the `Pillow` library to read the pixel dimensions directly from the source file. 
+	- For Images: It utilizes the `Pillow` library to read the pixel dimensions directly from the source file. 
 
-- **Scaling Calculation**: The script compares the original dimensions against the processed image dimensions to calculate the $`ratio\_x`$ and $`ratio\_y`$ scaling factors. 
+- Scaling Calculation: The script compares the original dimensions against the processed image dimensions to calculate the $`ratio\_x`$ and $`ratio\_y`$ scaling factors. 
 
 ---
 
 ## 📐 Mathematical Formulas
 
-- **Scaling Factor Calculation**
+- Scaling Factor Calculation
 
 	- First, the script determines how much the image was scaled during processing by comparing the dimensions of the processed image to the original.
 	
@@ -132,11 +132,11 @@ The script does not guess resolutions based on a filename; instead, it uses the 
 		
 		- $`ratio_y` = `\frac{\text{processed\_height}}{\text{original\_height}}`$
 	
-	- **Original Dimensions**: For PDFs, this is established by rendering the first page at a standard 300 DPI.
+	- Original Dimensions: For PDFs, this is established by rendering the first page at a standard 300 DPI.
 	
 	- Processed Dimensions: These are the pixel dimensions of the image actually sent to the OCR engine.
 
-- **Coordinate Inverse Transformation**
+- Coordinate Inverse Transformation
 
 	- Once the ratios are known, the script converts the bounding box coordinates $(`x, y`)$ and dimensions (width, height) from the "processed" system back to the "original" system using division.
 
@@ -152,17 +152,17 @@ The script does not guess resolutions based on a filename; instead, it uses the 
 
 			- $`\text{height}_{orig}` = `\frac{\text{height}_{proc}}{ratio_y}`$
 
-- **Corner Point Mapping**
+- Corner Point Mapping
 
 	- The script also updates the four corners of each detected text block. If the OCR data includes corner coordinates, they are transformed individually; otherwise, they are reconstructed from the original $`x`$, $`y`$, width, and height:
 
-		- **Top-Left**: $`(x_{orig}, y_{orig})`$
+		- Top-Left: $`(x_{orig}, y_{orig})`$
 		
-		- **Top-Right**: $`(x_{orig} + \text{width}_{orig}, y_{orig})`$
+		- Top-Right: $`(x_{orig} + \text{width}_{orig}, y_{orig})`$
 		
-		- **Bottom-Left**: $`(x_{orig}, y_{orig} + \text{height}_{orig})`$
+		- Bottom-Left: $`(x_{orig}, y_{orig} + \text{height}_{orig})`$
 		
-		- **Bottom-Right**: $`(x_{orig} + \text{width}_{orig}, y_{orig} + \text{height}_{orig})`$
+		- Bottom-Right: $`(x_{orig} + \text{width}_{orig}, y_{orig} + \text{height}_{orig})`$
 
 	- This ensures that regardless of whether the analysis was done in Small or Large mode, the resulting JSON data aligns perfectly with the original file's coordinate space.
 
@@ -170,7 +170,7 @@ The script does not guess resolutions based on a filename; instead, it uses the 
 
 ## 🔥 Getting Started
 
-💥 **Setup and Installation**:
+💥 Setup and Installation:
 
 > After opening the zip file
 
@@ -178,34 +178,34 @@ The script does not guess resolutions based on a filename; instead, it uses the 
 
 > In the terminal make sure you `cd` to the project folder i.e. ~/CS-499-Document-Analysis-Layout/
 
-1. **Create a Virtual Environment in the path you open the file**:
+1. Create a Virtual Environment in the path you open the file:
 	
-	- **macOS/Linux**:
+	- macOS/Linux:
 
       ```bash
 	  python3 -m venv venv
 	  source venv/bin/activate
       
-	- **Windows**:
+	- Windows:
 
 	  ```powershell
 	  python -m venv venv
 	  .\venv\Scripts\activate
    
-2. **Install Homebrew** (optional but recommended):
+2. Install Homebrew (optional but recommended):
 
-	- **macOS/Linux**:
+	- macOS/Linux:
 
 	  ```bash
 	  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-   - **Windows**: On Windows, you can use Chocolatey as a package manager.
+   - Windows: On Windows, you can use Chocolatey as a package manager.
 
 		> Note: If you prefer to use Homebrew on Windows, consider installing it via WSL (Windows Subsystem for Linux) and following the macOS instructions within your WSL terminal.
 
 	    > Open PowerShell as Administrator.
        
-	   - **Run the following command to install Chocolatey**:
+	   - Run the following command to install Chocolatey:
        
 	     ```powershell
 		 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
@@ -215,9 +215,9 @@ The script does not guess resolutions based on a filename; instead, it uses the 
 		  ```powershell
           choco --version
     
-3. **Install Dependencies: First, make sure pip is updated**:
+3. Install Dependencies: First, make sure pip is updated:
 		
-	- **macOS/Linux**:
+	- macOS/Linux:
 
 	  ```bash
 	  python3 -m pip install --upgrade pip
@@ -226,7 +226,7 @@ The script does not guess resolutions based on a filename; instead, it uses the 
    
    > A new file will be added to the DAL-Project Folder i.e. venv
 
-	- **Windows**:
+	- Windows:
 
 	  ```powershell
 	  python -m pip install --upgrade pip
@@ -235,25 +235,25 @@ The script does not guess resolutions based on a filename; instead, it uses the 
    
   > A new file will be added to the DAL-Project Folder i.e. venv
 
-4. **Run the App**:
+4. Run the App:
 
-	- **macOS/Linux**:
+	- macOS/Linux:
 
 	  ```bash
 	  python3 dal_ocr_project.py
       python3 coordinates.py
    
-	- **Windows**:
+	- Windows:
 
 	  ```powershell
 	  python dal_ocr_project.py
       python coordinates.py
 
-5. **Usage**:
+5. Usage:
 
    ```text
    http://127.0.0.1:5000
-6. **Troubleshooting**:
+6. Troubleshooting:
 
 	- For large PDFs, ensure you have enough `RAM` and `CPU` cores.
 
@@ -269,7 +269,7 @@ The script does not guess resolutions based on a filename; instead, it uses the 
 
 	- The drag box wont move when you first upload the file, you have to delete the drag box by clicking the "x" icon on the top right corner of the border, and press the button "More Drag-Boxes" only then it works properly, I dont know why this glitch is happening but it is a very small one so I ignored it.
 
-7. **Additional Nerdy-Stuff**:
+7. Additional Nerdy-Stuff:
 
 	- The other modules like `json`, `time`, `os`, `re`, and `multiprocessing` are part of Python’s standard library, so you don’t need to install them separately.
 
