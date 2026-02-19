@@ -168,9 +168,7 @@ The script does not guess resolutions based on a filename; instead, it uses the 
 
 ----
 
-## 🔥 Getting Started
-
-💥 Setup and Installation:
+## 💥 Setup and Installation:
 
 > After opening the zip file
 
@@ -233,7 +231,7 @@ The script does not guess resolutions based on a filename; instead, it uses the 
 	  pip --version
 	  pip install flask pdfplumber easyocr pyzbar pillow numpy pytesseract
    
-  > A new file will be added to the DAL-Project Folder i.e. venv
+  	> A new file will be added to the DAL-Project Folder i.e. venv
 
 4. Run the App:
 
@@ -282,3 +280,5 @@ The script does not guess resolutions based on a filename; instead, it uses the 
 | /results/<pdf_name> | GET | Shows total processed pages |
 | /json_data/<pdf_name>/<int:page> | GET | Returns JSON of extracted text |
 | /highlighted_image/<pdf_name>/<int:page> | GET | Returns image with bounding boxes |
+
+---
