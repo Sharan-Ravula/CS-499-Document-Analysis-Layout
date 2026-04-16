@@ -3,7 +3,7 @@
 ---
 ## ‼️ University Industry-Collaboration Project
 
-> Note: This project was developed as a senior design collaboration with OpenText Exstream. Originally intended as an exploratory tool for layout analysis, the final implementation exceeded stakeholder expectations, resulting in a company-filed patent for the unique approach to document decomposition.
+> Note: This project was developed as a senior design collaboration with OpenText Exstream. Originally intended as an exploratory tool for layout analysis, the final implementation exceeded stakeholder expectations.
 
 The DAL project provides an automated solution for analyzing complex document communications, breaking them down into respective logical pieces (text blocks, images, logos, and barcodes) to facilitate easy importing into the [OpenText Exstream](https://www.opentext.com/products/customer-communications-management) ecosystem.
 
@@ -68,7 +68,7 @@ DAL-Project/
 
 - Development Process: Conducted via `weekly agile meetings` to review updates, discuss algorithm refinements, and validate against enterprise document samples.
 
-- Outcome: Successfully transitioned from a university prototype to a `patented document` analysis methodology.
+- Outcome: Successfully transitioned from a university prototype to a document analysis pipeline.
 
 ---
 
